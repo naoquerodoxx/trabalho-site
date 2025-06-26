@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Estudante Mateus Lopes de Oliveira</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      scroll-behavior: smooth;
+    }
+    .foto-perfil {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 100%;
+}
+
+/* Ajuste de margens para seções */
+section {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Responsividade para títulos grandes */
+#titulo {
+  font-size: 2rem;
+}
+#subtitulo {
+  font-size: 1.2rem;
+}
+
+/* Cartões do portfólio em uma coluna no mobile */
+@media (max-width: 767px) {
+  .col-md-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .nav-link {
+    padding: 0.5rem 1rem;
+  }
+}
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Mateus Lopes de Oliveira</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experiencia">Experiência</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+          <li class="nav-item"><a class="nav-link" href="#depoimentos">Depoimentos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="bg-dark text-white text-center py-5">
+    <div class="container">
+      <img src="projetos/img/foto.jpg" class="foto-perfil" height="200" width="200" alt="Foto de Perfil"/>
+      <h1 id="titulo" class="display-4">Mateus Lopes de Oliveira</h1>
+      <p id="subtitulo" class="lead">| Estudante |</p>
+      <a href="#contato" class="btn btn-outline-light mt-3">Entre em contato</a>
+    </div>
+  </header>
+
+  <section id="sobre" class="container text-center my-5">
+    <h2 class="mb-4">Sobre Mim</h2>
+    <p>Sou graduando pela Escola Estadual Germano Negrini, com experiências em programação e edição/produções audiovisuais. </p><p>Inglês fluente.</p>
+
+  <section id="experiencia" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Experiência Profissional/Escolar</h2>
+      <ul class="timeline list-unstyled">
+        <li class="mb-3">🔧 2023 - 2024: Ensino médio técnico em marketing – ETEC</li>
+        <li>🌱 2024 - 2025: Ensino médio regular na E.E Germano Negrini</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="servicos" class="container my-5">
+    <h2 class="text-center mb-4">Serviços</h2>
+    <div class="row g-4">
+      <div class="col-md-4 text-center">
+        <h5>Programação e Automação</h5>
+        <p>Criação de projetos personalizados, com foco em funcionalidade, eficiência e praticidade.</p>
+      </div>
+      <div class="col-md-4 text-center">
+        <h5>Edição de Vídeos</h5>
+        <p>Montagem, elaboração e edição de vídeos profissionais ou não, no Vegas Pro 14.</p>
+      </div>
+      <div class="col-md-4 text-center">
+        <h5>Tradução</h5>
+        <p>Tradução de roteiros, excertos, trechos, da língua inglesa ou para a língua inglesa.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="container py-5">
+    <h2 class="text-center mb-4">Portfólio</h2>
+    <p class="text-center mb-5 text-muted">Veja alguns dos projetos e designs que desenvolvi</p>
+    <div class="row g-4">
+      <!-- Projeto 1 -->
+      <div class="col-md-4">
+        <div class="card shadow h-100">
+          <img src="projetos/img/projeto1.png" class="card-img-top" alt="Projeto 1">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">jogo de corrida</h5>
+            <a href="https://editor.p5js.org/d3sert/sketches/g7n07EVVS" target="_blank" class="btn btn-primary mt-auto">Ver Projeto</a>
+          </div>
+        </div>
+      </div>
+      <!-- Projeto 2 -->
+      <div class="col-md-4">
+        <div class="card shadow h-100">
+          <img src="projetos/img/projeto2.png" class="card-img-top" alt="Projeto 2">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">monalisa</h5>
+            <a href="https://editor.p5js.org/d3sert/sketches/N3kaoy4FZ" target="_blank" class="btn btn-primary mt-auto">Ver Projeto</a>
+          </div>
+        </div>
+      </div>
+      <!-- Projeto 3 -->
+      <div class="col-md-4">
+        <div class="card shadow h-100">
+          <img src="projetos/img/projeto3.png" class="card-img-top" alt="Projeto 3">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">quente frio</h5>
+            <a href="https://editor.p5js.org/d3sert/sketches/H47YnOy7W" target="_blank" class="btn btn-primary mt-auto">Ver Projeto</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="depoimentos" class="bg-light py-5">
+    <div class="container text-center">
+      <h2 class="mb-4">Depoimentos</h2>
+      <blockquote class="blockquote mt-1">"Mateus Oliveira nos ajudou a traduzir todo o nosso trabalho para a lingua inglesa." <footer class="blockquote-footer mt-1">João e Maria</footer></blockquote>
+      <blockquote class="blockquote mt-4">"Excelente profissional! Recomendo fortemente pela competência e atenção aos detalhes." <footer class="blockquote-footer mt-1">Carlos</footer></blockquote>
+    </div>
+  </section>
+
+  <section id="contato" class="py-5">
+    <div class="container text-center">
+      <h2 class="mb-4">Contato</h2>
+      <form class="row justify-content-center g-2">
+        <div class="col-md-4">
+          <input type="text" class="form-control" placeholder="Seu nome" required>
+        </div>
+        <div class="col-md-4">
+          <input type="email" class="form-control" placeholder="Seu e-mail" required>
+        </div>
+        <div class="col-8 mt-2">
+          <textarea class="form-control" rows="4" placeholder="Sua mensagem"></textarea>
+        </div>
+        <div class="col-8 mt-3">
+          <button type="submit" class="btn btn-primary w-100">Enviar</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2025 Mateus Lopes de Oliveira - Todos os direitos reservados</p>
+  </footer>
+
+  <a href="https://wa.me/+123456789" target="_blank" class="whatsapp-float" aria-label="WhatsApp">
+    <i class=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+        <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+      </svg></i>
+  </a>
+  
+  <!-- Botão voltar ao topo -->
+  <button id="scrollTopBtn" title="Voltar ao topo">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+  
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
+  <script src="https://kit.fontawesome.com/a2e9d1d5e0.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>
